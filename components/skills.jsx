@@ -12,7 +12,7 @@ export default function Skills() {
     },
     {
       title: 'Backend Development',
-      skills: ['FastAPI', 'Python', 'MySQL', 'REST APIs'],
+      skills: ['FastAPI', 'Python', 'MySQL'],
       icon: '⚙️',
     },
   ]

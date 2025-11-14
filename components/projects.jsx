@@ -1,24 +1,28 @@
 export default function Projects() {
   const projects = [
     {
-      title: 'AI Content Generator',
-      description: 'Generative AI application for automated content creation using advanced language models',
-      tags: ['Python', 'FastAPI', 'React', 'MySQL'],
+      image: "/Screenshot 2025-11-14 005320.png",
+      title: 'Expense Tracker',
+      description: 'A simple, elegant, and functional Expense Tracker App built with React.js, designed to help users manage and analyze their daily spending efficiently. ',
+      tags: ['Javascript', 'CSS', 'HTML'],
       url: 'https://react-js-six.vercel.app/'
     },
     {
-      title: 'Smart Recommendation Engine',
-      description: 'Machine learning-powered recommendation system with real-time personalization',
-      tags: ['Python', 'TensorFlow', 'JavaScript', 'MySQL'],
-      url: 'https://react-js-six.vercel.app/'
+      image: "/Screenshot 2025-11-14 011146.png",
+      title: 'Portfolio Website',
+      description: 'Portfolio website that give information of about, skills, projects, contact etc',
+      tags: ['Javascript', 'HTML', 'CSS', 'Typescript'],
+      url: 'https://dr-favour-portfolio.vercel.app/'
     },
     {
+      image: "Screenshot 2025-11-14 005320.png",
       title: 'Data Analytics Dashboard',
       description: 'Interactive dashboard for real-time data visualization and insights',
       tags: ['React', 'Tailwind CSS', 'JavaScript', 'FastAPI'],
-      url: 'https://react-js-six.vercel.app/'
+      url: 'https://dr-favour-portfolio-evm2.vercel.app/'
     },
     {
+      image: "Screenshot 2025-11-14 005320.png",
       title: 'Natural Language Processor',
       description: 'NLP pipeline for text analysis, sentiment detection, and classification',
       tags: ['Python', 'NLP', 'FastAPI', 'React'],
@@ -43,8 +47,8 @@ export default function Projects() {
               key={project.title}
               className="group bg-card border border-border rounded-lg p-6 hover:border-accent transition-all hover:shadow-lg cursor-pointer"
             >
-              <div className="h-32 bg-accent/10 rounded-lg mb-6 flex items-center justify-center border border-accent/20 group-hover:bg-accent/20 transition-colors">
-                <span className="text-accent text-3xl font-mono">{'</>'}</span>
+              <div className="h-64 bg-accent/10 rounded-lg mb-6 flex items-center justify-center border border-accent/20 group-hover:bg-accent/20 transition-colors">
+                <img className="w-full h-full object-cover" src={project.image} alt="" />
               </div>
               <h3 className="text-foreground font-bold text-lg mb-2 group-hover:text-accent transition-colors">
                 {project.title}

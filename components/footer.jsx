@@ -11,16 +11,16 @@ export default function Footer() {
               I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to get in touch!
             </p>
             <div className="flex gap-4 pt-4">
-              <a href="#" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+              <a href="mailto:favourolaosebikanf@gmail.com" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
                 <Mail size={20} />
               </a>
-              <a href="#" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+              <a href="https://github.com/Highllyfavoured" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
                 <Github size={20} />
               </a>
-              <a href="#" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+              <a href="https://www.linkedin.com/in/olaosebikan-favour-218577184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+              <a href="https://x.com/FavourOLAOSEBI1?t=-a6zJcKHKJLzDL5MY7tfXw&s=09" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
                 <Twitter size={20} />
               </a>
             </div>
