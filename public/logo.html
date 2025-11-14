@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dr.Favour — 200x200 Canvas Logo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;800&display=swap" rel="stylesheet">
+  <style>
+    html,body{height:100%;margin:0;display:flex;align-items:center;justify-content:center;background:#f3f4f6}
+    .card{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(10,11,13,0.08);}
+    canvas{image-rendering:optimizeQuality}
+    button{margin-top:10px;padding:8px 12px;border-radius:8px;border:0;background:#4f46e5;color:white;font-weight:600;cursor:pointer}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <canvas id="logo" width="200" height="200" style="width:200px;height:200px"></canvas>
+    <div style="display:flex;gap:8px;justify-content:center">
+      <button id="download">Download PNG</button>
+      <button id="exportSVG">Export as Data-URL (PNG)</button>
+    </div>
+    <small style="display:block;margin-top:8px;color:#6b7280;text-align:center">Logo: Dr.Favour — Generative AI Development</small>
+  </div>
+
+  <script>
+    // 200x200 canvas logo generator for "Dr.Favour" (Generative AI)
+    // Uses devicePixelRatio for crisp output on HiDPI displays.
+
+    const canvas = document.getElementById('logo');
+    const ctx = canvas.getContext('2d');
+
+    // scale for crispness on high-DPI screens
+    function scaleForHiDPI(c){
+      const dpr = Math.max(window.devicePixelRatio || 1, 1);
+      const w = c.width;
+      const h = c.height;
+      if (dpr === 1) return 1;
+      c.width = Math.round(w * dpr);
+      c.height = Math.round(h * dpr);
+      c.style.width = w + 'px';
+      c.style.height = h + 'px';
+      ctx.setTransform(dpr,0,0,dpr,0,0);
+      return dpr;
+    }
+
+    scaleForHiDPI(canvas);
+
+    // Colors — tweakable
+    const bgA = '#0f172a'; // deep navy base
+    const gradStart = '#7c3aed'; // purple
+    const gradEnd = '#06b6d4'; // teal
+    const accent = '#f97316'; // orange pop
+
+    // wait for fonts to load (using Inter)
+    function drawLogo(){
+      const W = 200, H = 200;
+
+      // Background: radial gradient
+      const rg = ctx.createRadialGradient(W*0.5, H*0.38, 20, W*0.5, H*0.5, 140);
+      rg.addColorStop(0, hexWithAlpha(gradStart, 0.95));
+      rg.addColorStop(0.45, hexWithAlpha(gradEnd, 0.85));
+      rg.addColorStop(1, hexWithAlpha(bgA, 1));
+
+      // paint background
+      ctx.fillStyle = rg;
+      ctx.fillRect(0,0,W,H);
+
+      // subtle noise-like vignette using semi-transparent arcs
+      for(let i=0;i<12;i++){
+        ctx.beginPath();
+        ctx.strokeStyle = 'rgba(0,0,0,'+ (0.03 + i*0.01) +')';
+        ctx.lineWidth = 1 + i*0.25;
+        ctx.arc(W/2, H/2, 60 + i*6, 0, Math.PI*2);
+        ctx.stroke();
+      }
+
+      // draw neural network nodes and connecting lines
+      const nodes = [
+        {x:60,y:70}, {x:95,y:45}, {x:140,y:80}, {x:80,y:120}, {x:130,y:140}
+      ];
+
+      // draw connections
+      ctx.lineWidth = 1.4;
+      for(let i=0;i<nodes.length;i++){
+        for(let j=i+1;j<nodes.length;j++){
+          const a = nodes[i]; const b = nodes[j];
+          // slightly curved connection
+          ctx.beginPath();
+          ctx.moveTo(a.x,a.y);
+          const cx = (a.x + b.x)/2 + (Math.random()-0.5)*8;
+          const cy = (a.y + b.y)/2 + (Math.random()-0.5)*8;
+          ctx.quadraticCurveTo(cx, cy, b.x, b.y);
+          // gradient for line
+          const lg = ctx.createLinearGradient(a.x,a.y,b.x,b.y);
+          lg.addColorStop(0, hexWithAlpha('#ffffff', 0.14));
+          lg.addColorStop(1, hexWithAlpha('#000000', 0.06));
+          ctx.strokeStyle = lg;
+          ctx.stroke();
+        }
+      }
+
+      // draw glowing nodes
+      nodes.forEach((n, idx) => {
+        const r = 6 + (idx%2)*1.5;
+        // glow
+        ctx.beginPath();
+        ctx.fillStyle = hexWithAlpha('#ffffff', 0.08 + idx*0.02);
+        ctx.arc(n.x, n.y, r*2.6, 0, Math.PI*2);
+        ctx.fill();
+        // inner circle with gradient
+        const ng = ctx.createRadialGradient(n.x,n.y,1,n.x,n.y,r);
+        ng.addColorStop(0, gradStart);
+        ng.addColorStop(1, gradEnd);
+        ctx.beginPath();
+        ctx.fillStyle = ng;
+        ctx.arc(n.x,n.y,r,0,Math.PI*2);
+        ctx.fill();
+      });
+
+      // central monogram: "DF"
+      // create a rounded square badge behind the letters
+      const badgeSize = 92;
+      const bx = W/2 - badgeSize/2;
+      const by = H/2 - badgeSize/2 + 6;
+      roundRect(ctx, bx, by, badgeSize, badgeSize, 18, true, false);
+
+      // badge gradient
+      const bg = ctx.createLinearGradient(bx, by, bx + badgeSize, by + badgeSize);
+      bg.addColorStop(0, hexWithAlpha('#ffffff', 0.06));
+      bg.addColorStop(1, hexWithAlpha('#ffffff', 0.02));
+      ctx.fillStyle = bg;
+      roundRect(ctx, bx, by, badgeSize, badgeSize, 18, true, false);
+
+      // thin border
+      ctx.lineWidth = 1.2;
+      ctx.strokeStyle = hexWithAlpha('#ffffff', 0.06);
+      roundRect(ctx, bx, by, badgeSize, badgeSize, 18, false, true);
+
+      // letters
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.font = 'bold 44px Inter, system-ui, -apple-system, "Segoe UI", Roboto';
+
+      // create letter gradient fill
+      const lg2 = ctx.createLinearGradient(bx, by, bx + badgeSize, by + badgeSize);
+      lg2.addColorStop(0, '#ffffff');
+      lg2.addColorStop(1, '#e6e6e6');
+
+      // slight shadow for depth
+      ctx.shadowColor = 'rgba(0,0,0,0.35)';
+      ctx.shadowBlur = 6;
+      ctx.fillStyle = lg2;
+      ctx.fillText('DF', W/2, H/2 + 6);
+
+      // small accent mark (like a spark) to suggest generative creativity
+      ctx.shadowBlur = 0;
+      ctx.beginPath();
+      ctx.fillStyle = accent;
+      ctx.arc(W - 50, 50, 6, 0, Math.PI*2);
+      ctx.fill();
+
+      // small caption under monogram
+      ctx.font = '600 10px Inter, system-ui, -apple-system, "Segoe UI", Roboto';
+      ctx.fillStyle = hexWithAlpha('#ffffff', 0.85);
+      ctx.fillText('Generative AI', W/2, H - 18);
+    }
+
+    // helpers
+    function roundRect(ctx,x,y,w,h,r,fill,stroke){
+      if (typeof r === 'number') r = {tl:r, tr:r, br:r, bl:r};
+      ctx.beginPath();
+      ctx.moveTo(x + r.tl, y);
+      ctx.lineTo(x + w - r.tr, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + r.tr);
+      ctx.lineTo(x + w, y + h - r.br);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - r.br, y + h);
+      ctx.lineTo(x + r.bl, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - r.bl);
+      ctx.lineTo(x, y + r.tl);
+      ctx.quadraticCurveTo(x, y, x + r.tl, y);
+      ctx.closePath();
+      if(fill) ctx.fill();
+      if(stroke) ctx.stroke();
+    }
+
+    function hexWithAlpha(hex, a){
+      // accepts #rrggbb and returns rgba()
+      hex = hex.replace('#','');
+      if(hex.length === 3) hex = hex.split('').map(c=>c+c).join('');
+      const r = parseInt(hex.substring(0,2),16);
+      const g = parseInt(hex.substring(2,4),16);
+      const b = parseInt(hex.substring(4,6),16);
+      return 'rgba('+r+','+g+','+b+','+a+')';
+    }
+
+    // draw once fonts are ready
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(drawLogo).catch(drawLogo);
+    } else {
+      window.onload = drawLogo;
+    }
+
+    // Download button
+    document.getElementById('download').addEventListener('click', ()=>{
+      const url = canvas.toDataURL('image/png');
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'dr-favour-logo-200x200.png';
+      a.click();
+    });
+
+    document.getElementById('exportSVG').addEventListener('click', ()=>{
+      // simple fallback: open data-url in new tab so user can save manually
+      const url = canvas.toDataURL('image/png');
+      window.open(url, '_blank');
+    });
+
+  </script>
+</body>
+</html>
