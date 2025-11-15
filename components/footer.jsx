@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Twitter, ExternalLink } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-card border-t border-border py-16 px-8">
+    <footer id='footer' className="bg-card border-t border-border py-16 px-8">
       <div className="max-w-4xl mx-auto space-y-12">
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-4">

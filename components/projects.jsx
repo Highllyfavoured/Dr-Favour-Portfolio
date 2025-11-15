@@ -15,17 +15,17 @@ export default function Projects() {
       url: 'https://dr-favour-portfolio.vercel.app/'
     },
     {
-      image: "Screenshot 2025-11-14 005320.png",
-      title: 'Data Analytics Dashboard',
-      description: 'Interactive dashboard for real-time data visualization and insights',
-      tags: ['React', 'Tailwind CSS', 'JavaScript', 'FastAPI'],
-      url: 'https://dr-favour-portfolio-evm2.vercel.app/'
+      image: "Screenshot 2025-11-14 023050.png",
+      title: 'Animal Blog',
+      description: 'Exploring the animal world',
+      tags: ['Javascript', 'HTML', 'CSS'],
+      url: 'http://dr-favour-portfolio-evm2.vercel.app/'
     },
     {
-      image: "Screenshot 2025-11-14 005320.png",
-      title: 'Natural Language Processor',
-      description: 'NLP pipeline for text analysis, sentiment detection, and classification',
-      tags: ['Python', 'NLP', 'FastAPI', 'React'],
+      image: "Screenshot 2025-11-14 013702.png",
+      title: 'Expense Tracker APIr',
+      description: 'The Expense Tracker API is a backend service built with FastAPI, designed to help users manage their expenses securely and efficiently.',
+      tags: ['Python', 'MySQL', 'JWT', 'JWT'],
       url: 'https://react-js-six.vercel.app/'
     },
   ]
@@ -65,7 +65,7 @@ export default function Projects() {
                     {tag}
                   </span>
                 ))}
-                <a href={project.url} target="_blank">View Project</a>
+                <a className="px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href={project.url} target="_blank">View Project</a>
               </div>
             </div>
           ))}

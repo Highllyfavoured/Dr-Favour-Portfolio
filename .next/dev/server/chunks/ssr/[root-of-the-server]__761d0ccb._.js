@@ -113,20 +113,22 @@ function Hero() {
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "flex gap-4",
                     children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-6 py-2 bg-accent text-accent-foreground rounded-lg font-medium text-sm hover:bg-accent/90 transition-colors",
-                            children: "Explore My Work"
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            className: "px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
+                            href: "#projects",
+                            children: "Explore my work"
                         }, void 0, false, {
                             fileName: "[project]/components/hero.jsx",
                             lineNumber: 23,
                             columnNumber: 11
                         }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                             className: "px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
-                            children: "Get in Touch"
+                            href: "#footer",
+                            children: "Get in touch"
                         }, void 0, false, {
                             fileName: "[project]/components/hero.jsx",
-                            lineNumber: 26,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this)
                     ]
@@ -578,26 +580,25 @@ function Projects() {
             url: 'https://dr-favour-portfolio.vercel.app/'
         },
         {
-            image: "Screenshot 2025-11-14 005320.png",
-            title: 'Data Analytics Dashboard',
-            description: 'Interactive dashboard for real-time data visualization and insights',
+            image: "Screenshot 2025-11-14 023050.png",
+            title: 'Animal Blog',
+            description: 'Exploring the animal world',
             tags: [
-                'React',
-                'Tailwind CSS',
-                'JavaScript',
-                'FastAPI'
+                'Javascript',
+                'HTML',
+                'CSS'
             ],
-            url: 'https://dr-favour-portfolio-evm2.vercel.app/'
+            url: 'http://dr-favour-portfolio-evm2.vercel.app/'
         },
         {
-            image: "Screenshot 2025-11-14 005320.png",
-            title: 'Natural Language Processor',
-            description: 'NLP pipeline for text analysis, sentiment detection, and classification',
+            image: "Screenshot 2025-11-14 013702.png",
+            title: 'Expense Tracker APIr',
+            description: 'The Expense Tracker API is a backend service built with FastAPI, designed to help users manage their expenses securely and efficiently.',
             tags: [
                 'Python',
-                'NLP',
-                'FastAPI',
-                'React'
+                'MySQL',
+                'JWT',
+                'JWT'
             ],
             url: 'https://react-js-six.vercel.app/'
         }
@@ -697,6 +698,7 @@ function Projects() {
                                                 columnNumber: 19
                                             }, this)),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            className: "px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
                                             href: project.url,
                                             target: "_blank",
                                             children: "View Project"
@@ -747,25 +749,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 function Blog() {
     const posts = [
         {
-            title: 'Getting Started with Generative AI in Python',
-            excerpt: 'A comprehensive guide to building your first generative AI application using Python and modern frameworks.',
-            date: 'Nov 12, 2024',
+            title: 'Starting my Generative AI journey',
+            excerpt: 'Standing at the intersection of science and technology, I’m ready to shape the future with AI.💯💯',
+            date: 'Sep 4, 2025',
             readTime: '8 min read',
-            category: 'Tutorial'
+            category: 'Information',
+            url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_genaifellowship-artificialintelligence-innovation-activity-7368940257808969728-PIX2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY'
         },
         {
-            title: 'Full-Stack Development with React and FastAPI',
-            excerpt: 'Learn how to build scalable full-stack applications combining React frontend with FastAPI backend.',
-            date: 'Nov 8, 2024',
-            readTime: '12 min read',
-            category: 'Development'
+            title: 'Web Development with HTML, CSS, and Javascript',
+            excerpt: 'diving deep into HTML, CSS, and sprinkling a bit of JavaScript magic.',
+            date: 'September 20, 2025',
+            readTime: '3 min read',
+            category: 'Development',
+            url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_webdevelopment-codingjourney-frontenddev-activity-7374790341918375936-mHs2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY'
         },
         {
-            title: 'Best Practices for Machine Learning in Production',
-            excerpt: 'Exploring strategies and tools for deploying machine learning models safely and efficiently.',
-            date: 'Oct 30, 2024',
-            readTime: '10 min read',
-            category: 'Best Practices'
+            title: 'Best Practices in frontend develoment',
+            excerpt: 'JavaScript my love ❣️ CSS my darling 🥰 HTML! the father of them all 😅 (argue with your keyboard 😂)',
+            date: 'Oct 10, 2025',
+            readTime: '5 min read',
+            category: 'Development',
+            url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_webdevelopment-frontenddeveloper-javascript-activity-7382687358355247104-MmuH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -781,7 +786,7 @@ function Blog() {
                             children: "INSIGHTS & KNOWLEDGE"
                         }, void 0, false, {
                             fileName: "[project]/components/blog.jsx",
-                            lineNumber: 30,
+                            lineNumber: 33,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -791,7 +796,7 @@ function Blog() {
                                     className: "w-1 h-8 bg-accent rounded"
                                 }, void 0, false, {
                                     fileName: "[project]/components/blog.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 35,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -799,19 +804,19 @@ function Blog() {
                                     children: "Latest Blog Posts"
                                 }, void 0, false, {
                                     fileName: "[project]/components/blog.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 36,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/blog.jsx",
-                            lineNumber: 31,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/blog.jsx",
-                    lineNumber: 29,
+                    lineNumber: 32,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -828,7 +833,7 @@ function Blog() {
                                                 children: post.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/blog.jsx",
-                                                lineNumber: 45,
+                                                lineNumber: 48,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -836,18 +841,18 @@ function Blog() {
                                                 children: post.excerpt
                                             }, void 0, false, {
                                                 fileName: "[project]/components/blog.jsx",
-                                                lineNumber: 48,
+                                                lineNumber: 51,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/blog.jsx",
-                                        lineNumber: 44,
+                                        lineNumber: 47,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/blog.jsx",
-                                    lineNumber: 43,
+                                    lineNumber: 46,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -860,27 +865,27 @@ function Blog() {
                                                     children: post.date
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/blog.jsx",
-                                                    lineNumber: 55,
+                                                    lineNumber: 58,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: "•"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/blog.jsx",
-                                                    lineNumber: 56,
+                                                    lineNumber: 59,
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                     children: post.readTime
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/blog.jsx",
-                                                    lineNumber: 57,
+                                                    lineNumber: 60,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/blog.jsx",
-                                            lineNumber: 54,
+                                            lineNumber: 57,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -888,51 +893,62 @@ function Blog() {
                                             children: post.category
                                         }, void 0, false, {
                                             fileName: "[project]/components/blog.jsx",
-                                            lineNumber: 59,
+                                            lineNumber: 62,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/blog.jsx",
-                                    lineNumber: 53,
+                                    lineNumber: 56,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    className: "px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
+                                    href: post.url,
+                                    target: "_blank",
+                                    children: "View Project"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/blog.jsx",
+                                    lineNumber: 66,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, post.title, true, {
                             fileName: "[project]/components/blog.jsx",
-                            lineNumber: 39,
+                            lineNumber: 42,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/blog.jsx",
-                    lineNumber: 37,
+                    lineNumber: 40,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "text-center",
                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                        href: "#",
+                        href: "https://www.linkedin.com/in/olaosebikan-favour-218577184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+                        target: "_blank",
                         className: "inline-block px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
                         children: "View All Articles"
                     }, void 0, false, {
                         fileName: "[project]/components/blog.jsx",
-                        lineNumber: 68,
+                        lineNumber: 72,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/blog.jsx",
-                    lineNumber: 67,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/blog.jsx",
-            lineNumber: 28,
+            lineNumber: 31,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/blog.jsx",
-        lineNumber: 27,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
@@ -954,6 +970,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lu
 ;
 function Footer() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+        id: "footer",
         className: "bg-card border-t border-border py-16 px-8",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
             className: "max-w-4xl mx-auto space-y-12",

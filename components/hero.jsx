@@ -20,12 +20,11 @@ export default function Hero() {
         </div>
 
         <div className="flex gap-4">
-          <button className="px-6 py-2 bg-accent text-accent-foreground rounded-lg font-medium text-sm hover:bg-accent/90 transition-colors">
-            Explore My Work
-          </button>
-          <button className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors">
-            Get in Touch
-          </button>
+          <a className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href="#projects">Explore my work</a>
+
+          <a className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href="#footer">Get in touch</a>
+          
+          
         </div>
       </div>
     </section>

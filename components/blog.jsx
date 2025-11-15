@@ -1,25 +1,28 @@
 export default function Blog() {
   const posts = [
     {
-      title: 'Getting Started with Generative AI in Python',
-      excerpt: 'A comprehensive guide to building your first generative AI application using Python and modern frameworks.',
-      date: 'Nov 12, 2024',
+      title: 'Starting my Generative AI journey',
+      excerpt: 'Standing at the intersection of science and technology, I’m ready to shape the future with AI.💯💯',
+      date: 'Sep 4, 2025',
       readTime: '8 min read',
-      category: 'Tutorial',
+      category: 'Information',
+      url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_genaifellowship-artificialintelligence-innovation-activity-7368940257808969728-PIX2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY'
     },
     {
-      title: 'Full-Stack Development with React and FastAPI',
-      excerpt: 'Learn how to build scalable full-stack applications combining React frontend with FastAPI backend.',
-      date: 'Nov 8, 2024',
-      readTime: '12 min read',
+      title: 'Web Development with HTML, CSS, and Javascript',
+      excerpt: 'diving deep into HTML, CSS, and sprinkling a bit of JavaScript magic.',
+      date: 'September 20, 2025',
+      readTime: '3 min read',
       category: 'Development',
+      url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_webdevelopment-codingjourney-frontenddev-activity-7374790341918375936-mHs2?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY',
     },
     {
-      title: 'Best Practices for Machine Learning in Production',
-      excerpt: 'Exploring strategies and tools for deploying machine learning models safely and efficiently.',
-      date: 'Oct 30, 2024',
-      readTime: '10 min read',
-      category: 'Best Practices',
+      title: 'Best Practices in frontend develoment',
+      excerpt: 'JavaScript my love ❣️ CSS my darling 🥰 HTML! the father of them all 😅 (argue with your keyboard 😂)',
+      date: 'Oct 10, 2025',
+      readTime: '5 min read',
+      category: 'Development',
+      url: 'https://www.linkedin.com/posts/olaosebikan-favour-218577184_webdevelopment-frontenddeveloper-javascript-activity-7382687358355247104-MmuH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACuCo3QBRAOqUUP4oJ0Ymx0E_emhvD9K9HY',
     },
   ]
 
@@ -60,12 +63,13 @@ export default function Blog() {
                   {post.category}
                 </span>
               </div>
+              <a className="px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href={post.url} target="_blank">View Project</a>
             </article>
           ))}
         </div>
 
         <div className="text-center">
-          <a href="#" className="inline-block px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors">
+          <a href="https://www.linkedin.com/in/olaosebikan-favour-218577184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"  className="inline-block px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors">
             View All Articles
           </a>
         </div>
