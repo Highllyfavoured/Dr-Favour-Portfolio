@@ -388,9 +388,7 @@ function Skills() {
             title: 'AI & Machine Learning',
             skills: [
                 'Generative AI',
-                'Python',
-                'NLP',
-                'TensorFlow'
+                'Python'
             ],
             icon: '🤖'
         },
@@ -597,7 +595,6 @@ function Projects() {
             tags: [
                 'Python',
                 'MySQL',
-                'JWT',
                 'JWT'
             ],
             url: 'https://react-js-six.vercel.app/'
@@ -906,7 +903,7 @@ function Blog() {
                                     className: "px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors",
                                     href: post.url,
                                     target: "_blank",
-                                    children: "View Project"
+                                    children: "View Post"
                                 }, void 0, false, {
                                     fileName: "[project]/components/blog.jsx",
                                     lineNumber: 66,
@@ -1213,7 +1210,7 @@ function Footer() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$0$2e$3_react$2d$dom$40$19$2e$2$2e$0_react$40$19$2e$2$2e$0_$5f$react$40$19$2e$2$2e$0$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "#",
+                                    href: "#footer",
                                     className: "hover:text-accent transition-colors",
                                     children: "Contact"
                                 }, void 0, false, {
