@@ -25,7 +25,7 @@ export default function Projects() {
       image: "Screenshot 2025-11-14 013702.png",
       title: 'Expense Tracker APIr',
       description: 'The Expense Tracker API is a backend service built with FastAPI, designed to help users manage their expenses securely and efficiently.',
-      tags: ['Python', 'MySQL', 'JWT', 'JWT'],
+      tags: ['Python', 'MySQL', 'JWT'],
       url: 'https://react-js-six.vercel.app/'
     },
   ]

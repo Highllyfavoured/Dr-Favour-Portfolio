@@ -56,7 +56,7 @@ export default function Footer() {
           <div className="flex gap-6 text-xs text-foreground/50">
             <a href="#" className="hover:text-accent transition-colors">Privacy</a>
             <a href="#" className="hover:text-accent transition-colors">Terms</a>
-            <a href="#" className="hover:text-accent transition-colors">Contact</a>
+            <a href="#footer" className="hover:text-accent transition-colors">Contact</a>
           </div>
         </div>
       </div>

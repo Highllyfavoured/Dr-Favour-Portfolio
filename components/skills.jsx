@@ -2,7 +2,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: 'AI & Machine Learning',
-      skills: ['Generative AI', 'Python', 'NLP', 'TensorFlow'],
+      skills: ['Generative AI', 'Python'],
       icon: '🤖',
     },
     {

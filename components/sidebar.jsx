@@ -125,18 +125,18 @@ export default function Sidebar() {
         <div className="p-6 border-t border-border">
           <p className="text-xs text-muted-foreground mb-4 font-mono">CONNECT</p>
           <div className="flex gap-4">
-            <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-              <Github size={18} />
-            </a>
-            <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-              <Linkedin size={18} />
-            </a>
-            <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-              <Twitter size={18} />
-            </a>
-            <a href="#" className="text-accent hover:text-accent/80 transition-colors">
-              <Mail size={18} />
-            </a>
+            <a href="mailto:favourolaosebikanf@gmail.com" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+                <Mail size={20} />
+              </a>
+              <a href="https://github.com/Highllyfavoured" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+                <Github size={20} />
+              </a>
+              <a href="https://www.linkedin.com/in/olaosebikan-favour-218577184?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+                <Linkedin size={20} />
+              </a>
+              <a href="https://x.com/FavourOLAOSEBI1?t=-a6zJcKHKJLzDL5MY7tfXw&s=09" target="_blank" className="p-2 hover:bg-accent/20 rounded-lg transition-colors text-accent">
+                <Twitter size={20} />
+              </a>
           </div>
         </div>
       </aside>

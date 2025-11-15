@@ -63,7 +63,7 @@ export default function Blog() {
                   {post.category}
                 </span>
               </div>
-              <a className="px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href={post.url} target="_blank">View Project</a>
+              <a className="px-2 py-1 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href={post.url} target="_blank">View Post</a>
             </article>
           ))}
         </div>
