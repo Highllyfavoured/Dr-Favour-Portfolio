@@ -2,11 +2,11 @@ export default function Hero() {
   return (
     <section className="px-8 py-20 border-b border-border">
       <div className="space-y-8">
-        <div className="flex flex-row gap-5 justify-center items-center">
+        <div className="flex flex-row max-sm:flex-wrap gap-5 justify-center items-center">
           <img
            src="WhatsApp Image 2025-11-13 at 22.46.26_25f1b8e0.jpg"
            alt="Favoured"
-            className="w-80 h-80 object-cover rounded-full"
+            className="w-full max-w-80 aspect-square object-cover rounded-[50%]"
           />
           <div> 
           <p className="text-accent font-mono text-sm mb-4">{'// Welcome to my portfolio'}</p>

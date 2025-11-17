@@ -85,14 +85,13 @@
     --color-red-300: #ffa3a3;
     --color-red-400: #ff6568;
     --color-red-600: #e40014;
+    --color-green-600: #00a544;
     --color-black: #000;
     --color-white: #fff;
     --spacing: .25rem;
     --container-sm: 24rem;
     --container-lg: 32rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
-    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --text-xs: .75rem;
@@ -139,6 +138,7 @@
       --color-red-300: lab(76.5514% 36.4219 15.5335);
       --color-red-400: lab(63.7053% 60.7449 31.3109);
       --color-red-600: lab(48.4493% 77.4328 61.5452);
+      --color-green-600: lab(59.0978% -58.6621 41.2579);
     }
   }
 }
@@ -1059,16 +1059,8 @@
     max-width: var(--skeleton-width);
   }
 
-  .max-w-2 {
-    max-width: calc(var(--spacing) * 2);
-  }
-
   .max-w-2xl {
     max-width: var(--container-2xl);
-  }
-
-  .max-w-3xl {
-    max-width: var(--container-3xl);
   }
 
   .max-w-4xl {
@@ -1079,12 +1071,16 @@
     max-width: var(--container-5xl);
   }
 
-  .max-w-\[calc\(100\%-2rem\)\] {
-    max-width: calc(100% - 2rem);
+  .max-w-8 {
+    max-width: calc(var(--spacing) * 8);
   }
 
-  .max-w-lg {
-    max-width: var(--container-lg);
+  .max-w-80 {
+    max-width: calc(var(--spacing) * 80);
+  }
+
+  .max-w-\[calc\(100\%-2rem\)\] {
+    max-width: calc(100% - 2rem);
   }
 
   .max-w-max {
@@ -1093,10 +1089,6 @@
 
   .max-w-sm {
     max-width: var(--container-sm);
-  }
-
-  .max-w-xl {
-    max-width: var(--container-xl);
   }
 
   .min-w-\(--cell-size\) {
@@ -1483,6 +1475,14 @@
     border-radius: 4px;
   }
 
+  .rounded-\[50\%\] {
+    border-radius: 50%;
+  }
+
+  .rounded-\[50\] {
+    border-radius: 50px;
+  }
+
   .rounded-\[calc\(var\(--radius\)-5px\)\] {
     border-radius: calc(var(--radius)  - 5px);
   }
@@ -1726,6 +1726,10 @@
     background-color: var(--foreground);
   }
 
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+
   .bg-input {
     background-color: var(--input);
   }
@@ -1760,6 +1764,10 @@
     .bg-primary\/20 {
       background-color: color-mix(in oklab, var(--primary) 20%, transparent);
     }
+  }
+
+  .bg-red-400 {
+    background-color: var(--color-red-400);
   }
 
   .bg-secondary {
@@ -4280,6 +4288,18 @@
 
   .nth-last-2\:-mt-1:nth-last-child(2) {
     margin-top: calc(var(--spacing) * -1);
+  }
+
+  @media not (min-width: 40rem) {
+    .max-sm\:w-full {
+      width: 100%;
+    }
+  }
+
+  @media not (min-width: 40rem) {
+    .max-sm\:flex-wrap {
+      flex-wrap: wrap;
+    }
   }
 
   @media (min-width: 40rem) {

@@ -83,7 +83,7 @@ export default function Sidebar() {
       )}
 
       {/* Desktop Sidebar */}
-      <aside className="hidden md:flex fixed left-0 top-0 w-64 h-screen bg-background border-r border-border flex-col">
+      <aside className="hidden md:flex left-0 top-0 w-64 h-screen bg-background border-r border-border flex-col">
         <div className="p-8 border-b border-border">
           <div className="mb-2">
             <p className="text-xs text-muted-foreground font-mono tracking-wider">{'</> Dr. Olaosebikan'}</p>

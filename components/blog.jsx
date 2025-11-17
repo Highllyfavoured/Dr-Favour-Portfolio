@@ -27,7 +27,7 @@ export default function Blog() {
   ]
 
   return (
-    <section id="blog" className="px-8 py-20 border-b border-border">
+    <section id="blog" className="px-8 py-20 border-b border-border max-sm:w-ful">
       <div className="space-y-12">
         <div>
           <h3 className="text-accent font-mono text-sm mb-4 font-bold tracking-widest">INSIGHTS & KNOWLEDGE</h3>

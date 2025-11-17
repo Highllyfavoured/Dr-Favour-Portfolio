@@ -8,9 +8,9 @@ import Footer from '@/components/footer'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen bg-background">
+    <div className="flex h-screen bg-background overflow-hidden">
       <Sidebar />
-      <main className="flex-1 ml-64 max-w-5xl mx-auto">
+      <main className="flex flex-col overflow-auto max-sm:w-full">
         <Hero />
         <About />
         <Skills />
