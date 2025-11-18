@@ -24,7 +24,22 @@ export default function Hero() {
 
           <a className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href="#footer">Get in touch</a>
           
-          
+          <a
+            href="https://portfolio-eta-flax-91.vercel.app/Olaosebikan Favour .docx"
+            className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:scale-105 hover:text-blue-700 transition"
+          >
+           <FaRegEye />
+            View CV
+          </a>
+
+      <a
+            href="/Olaosebikan Favour .docx"
+            download
+            className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:scale-105 hover:text-blue-700 transition"
+          >
+            <FaDownload />
+            Download CV
+          </a>
         </div>
       </div>
     </section>
