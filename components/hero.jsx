@@ -20,24 +20,25 @@ export default function Hero() {
         </div>
 
         <div className="flex gap-4">
-          <a className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href="#projects">Explore my work</a>
+          <a className="px-6 py-2 border bg-accent text-black rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors hover:text-accent" href="#projects">Explore my work</a>
 
-          <a className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors" href="#footer">Get in touch</a>
+          <a className="px-6 py-2 border bg-accent text-black rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors hover:text-accent" href="#footer">Get in touch</a>
           
           <a
-            href="https://portfolio-eta-flax-91.vercel.app/Olaosebikan Favour .docx"
-            className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:scale-105 hover:text-blue-700 transition"
+            href="/OlaosebikanFavourCV.pdf"
+            target="__blank"
+            className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors"
           >
-           <FaRegEye />
+           {/* <FaRegEye /> */}
             View CV
           </a>
 
       <a
-            href="/Olaosebikan Favour .docx"
+            href="/OlaosebikanFavourCV.pdf"
             download
-            className="flex items-center gap-2 bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold hover:scale-105 hover:text-blue-700 transition"
+            className="px-6 py-2 border border-accent text-accent rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors"
           >
-            <FaDownload />
+            {/* <FaDownload /> */}
             Download CV
           </a>
         </div>
