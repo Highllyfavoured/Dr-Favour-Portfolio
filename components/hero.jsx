@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-4">
           <a className="px-6 py-2 border bg-accent text-black rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors hover:text-accent" href="#projects">Explore my work</a>
 
           <a className="px-6 py-2 border bg-accent text-black rounded-lg font-medium text-sm hover:bg-accent/10 transition-colors hover:text-accent" href="#footer">Get in touch</a>
